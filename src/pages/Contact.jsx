@@ -1,10 +1,19 @@
 import React from "react";
 import { Phone, MapPin, Clock, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
+import homeBg from "../assets/backgrounds/home.png";
 
 export default function Contact() {
   return (
-    <section className="section">
+    <section 
+      className="section"
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(5, 5, 5, 0.85), rgba(5, 5, 5, 0.96)), url(${homeBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}
+    >
       <div className="container">
         
         <div className="section-header">

@@ -2,10 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Route, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
+import homeBg from "../assets/backgrounds/home.png";
 
 export default function Home() {
   return (
-    <section className="hero-section">
+    <section 
+      className="hero-section"
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(5, 5, 5, 0.75), rgba(5, 5, 5, 0.96)), url(${homeBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}
+    >
       <div className="hero-bg-overlay"></div>
       <div className="container hero-grid">
         

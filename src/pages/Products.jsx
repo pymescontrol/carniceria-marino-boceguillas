@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, ShoppingBag } from "lucide-react";
 import { motion } from "framer-motion";
+import homeBg from "../assets/backgrounds/home.png";
 
 export default function Products() {
   const families = [
@@ -44,7 +45,15 @@ export default function Products() {
   ];
 
   return (
-    <section className="section section-dark">
+    <section 
+      className="section section-dark"
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(5, 5, 5, 0.8), rgba(5, 5, 5, 0.96)), url(${homeBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}
+    >
       <div className="container">
         
         <div className="section-header">

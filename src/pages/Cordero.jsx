@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
+import corderoBg from "../assets/backgrounds/cordero.png";
 
 export default function Cordero() {
   const cuts = [
@@ -15,7 +16,15 @@ export default function Cordero() {
   ];
 
   return (
-    <section className="section section-dark">
+    <section 
+      className="section section-dark"
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(5, 5, 5, 0.8), rgba(5, 5, 5, 0.96)), url(${corderoBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}
+    >
       <div className="container">
         
         <div className="section-header">

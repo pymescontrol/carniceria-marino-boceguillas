@@ -1,10 +1,19 @@
 import React from "react";
 import { Phone } from "lucide-react";
 import { motion } from "framer-motion";
+import homeBg from "../assets/backgrounds/home.png";
 
 export default function Orders() {
   return (
-    <section className="section order-section">
+    <section 
+      className="section order-section"
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(5, 5, 5, 0.8), rgba(5, 5, 5, 0.96)), url(${homeBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}
+    >
       <div className="container">
         
         <motion.div 

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
+import polloBg from "../assets/backgrounds/pollo.png";
 
 export default function Pollo() {
   const cuts = [
@@ -16,7 +17,15 @@ export default function Pollo() {
   ];
 
   return (
-    <section className="section section-dark">
+    <section 
+      className="section section-dark"
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(5, 5, 5, 0.8), rgba(5, 5, 5, 0.96)), url(${polloBg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}
+    >
       <div className="container">
         
         <div className="section-header">
